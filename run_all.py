@@ -1,5 +1,3 @@
-"""One command does everything:   python3 run_all.py        (add --quick for a short smoke test)
-Order: unit tests -> benchmark (checks every answer first) -> tables, plots and prediction checks."""
 import os, subprocess, sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
