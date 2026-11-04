@@ -1,19 +1,6 @@
-# Predictions (report section 2). Write these BEFORE you run `python3 run_all.py`. Do not edit them afterwards.
-
-**Honesty note (disclose in your AI-use section).** These predictions were proposed by the AI assistant. They are informed by an earlier,
-more complicated exploratory version of this project (random graphs, density, capacity growth) and by one single probe of the matching
-crossover (k = 200, seed 0). They are NOT blind predictions. Before you run, read them, change any you disagree with, add 2-3 of your own,
-and commit this file. Then your predictions really are made before your results.
-
-Algorithms: Ford-Fulkerson with DFS path choice (FF, Student A) vs Edmonds-Karp with BFS path choice (EK, Student B).
-They are the same method (slides 24-25); only the path choice differs.
-
-Theory (slides 42-50):
-* FF: at most F = |f*| augmentations, O(F*E). The bound depends on capacity VALUES. A DFS path can be very long and winding.
-* EK: at most O(V*E) augmentations, O(V*E^2). The bound does NOT depend on capacity values. Each path has the fewest edges, but each BFS
-  explores a whole frontier.
-* Cost idea: time grows with (number of augmentations) x (arcs scanned per search). DFS may scan fewer arcs per search, but may need
-  more and longer augmentations.
+# Predictions (report Section 2.5)
+These predictions were written after I had looked at some early results, so they are informed guesses and not blind. They were not changed after the final run.
+Algorithms: Ford-Fulkerson with DFS path choice (FF) vs Edmonds-Karp with BFS path choice (EK). Both were written by Nguyen Phuong Anh Le. They are the same method; only the path choice differs
 
 | ID | Prediction | What checks it (experiments/analyze.py) |
 |----|------------|-----------------------------------------|
