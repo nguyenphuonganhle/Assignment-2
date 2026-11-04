@@ -1,0 +1,12 @@
+{
+  "python": "3.14.3",
+  "platform": "macOS-15.4.1-x86_64-i386-64bit-Mach-O",
+  "processor": "i386",
+  "cpu_count": 8,
+  "timer": "time.perf_counter",
+  "reps": 5,
+  "quick": false,
+  "instances": 170,
+  "trials": 1700,
+  "date": "2026-10-30 16:57:22"
+}
